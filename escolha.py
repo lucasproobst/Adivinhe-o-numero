@@ -7,26 +7,26 @@ import os
 
 print('******** Seja bem-vindo(a) ao jogo da adivinhação. ********\n')
 print('[F] Fácil (0 a 10) \n')
-print('[M] Médio (0 a 30) \n')
-print('[D] Dificil (0 a 100) \n')
-print('[E] Extremo (0 a 1000) \n')
+print('[M] Médio (10 a 30) \n')
+print('[D] Dificil (30 a 100) \n')
+print('[E] Extremo (100 a 1000) \n')
 
 escolha = input('Escolha: ')
 
 os.system('clear')
 
 dificultade_F = random.randint(0, 10)
-dificultade_M = random.randint(0, 30)
-dificultade_D = random.randint(0, 100)
-dificultade_E = random.randint(0, 1000)
+dificultade_M = random.randint(10, 30)
+dificultade_D = random.randint(30, 100)
+dificultade_E = random.randint(100, 1000)
 
 acertou = False
 tentativas = 0
 
-# print(dificultade_F)
-# print(dificultade_M)
-# print(dificultade_D)
-# print(dificultade_E)
+print(dificultade_F)
+print(dificultade_M)
+print(dificultade_D)
+print(dificultade_E)
 
 while not acertou:
     jogador = int(input('Número: '))

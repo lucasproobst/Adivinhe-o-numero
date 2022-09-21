@@ -1,3 +1,7 @@
+# Código desenvolvido por Lucas Probst.
+# Utilizando a linguagem de programação Python.
+# Joguinho simples de adivinhação.
+
 import random
 import os
 
